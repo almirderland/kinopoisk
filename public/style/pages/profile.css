@@ -1,0 +1,45 @@
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+
+.profile-img{
+    width: 15%;
+    padding-right: 10px;
+}
+
+.profile-img img{
+    width: 100%;
+}
+
+.profile-info{
+    width: 80%;
+}
+
+.profile-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.profile-info p span{
+    font-weight: 600;
+}
+
+.profile-info button{
+    padding: 7px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.edit-btn{
+    background: linear-gradient(135deg,#f50 69.93%,#d6bb00);
+}
+
+.logout-btn {
+    background-color: #f50;
+}

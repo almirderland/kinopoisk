@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs')%>
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/header.ejs')%>
+    <div class="container">
+        <div class="main">
+            <div class="categories">
+                <h3>Жанры</h3>
+                <a href="">Драма</a>
+                <a href="">Комедии</a>
+                <a href="">Ужасы</a>
+            </div>
+            <div class="main-content">
+                <h3>Профиль</h3>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="/images/female-profile.jpg" alt="">
+                    </div>
+                    <div class="profile-info">
+                        <p><span>Полное имя: </span> Халитова Альмира</p>
+                        <p><span>E-mail </span>  almirdeland@gmail.com</p>
+                        <button class="edit-btn">Редактировать профиль</button>
+                        <button class="logout-btn">Выход</button>
+                    </div>
+                </div>
+                <h3>Сохраненные фильмы</h3>
+                <div class="main-card">
+                    <div class="card-left">
+                        <div class="film-img">
+                            <img src="/images/72x108.webp" alt="">
+                        </div>
+                        <div class="film-info">
+                            <a href="">Все везде и сразу</a>
+                            <a href="">Everything everywhere All at Once, 2021, 139мин</a>
+                            <a href="">США, Фантастика</a>
+                            <button class="film-btn">
+                                <img src="/images/icons/play_triangle.svg" alt="">
+                                Смотреть
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <div class="film-rate">
+                            <p>7.3</p>
+                        </div>
+                        <button class="film-btn">
+                            <img src="/images/safe.svg" alt="">
+                            Буду смотреть
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
