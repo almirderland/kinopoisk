@@ -18,10 +18,12 @@ router.get('/register', (req , res) =>{
 })
 
 router.get('/profile', (req , res) =>{
+    console.log(req.user)
     res.render("profile")
 })
 
 router.get('/admin', (req , res) =>{
+    console.log(req.user)
     res.render("adminProfile")
 })
 

@@ -1,7 +1,7 @@
 const User = require('./User')
 const bcrypt = require('bcrypt')
 
-const singUp = async (req, res ) =>{
+const signUp = async (req, res ) =>{
     if(
         req.body.email.length <= 0 &&
         req.body.full_name.length <= 0 &&
@@ -10,6 +10,7 @@ const singUp = async (req, res ) =>{
     ){
         res.redirect('/register?error=1')
     }else if (req.body.password !== req.body.re_password){
+        console.log(req.body.password, req.body.re_password)
         res.redirect('/register?error=2')
     }else if (await User.findOne({email : req.body.email})){
         res.redirect('/register?error=3')
@@ -24,6 +25,11 @@ const singUp = async (req, res ) =>{
     });
 }}
 
+const singIn = async (req, res ) =>{
+    res.redirect('/profile')
+}
+
 module.exports = {
-    singUp
+    signUp,
+    singIn
 }   
